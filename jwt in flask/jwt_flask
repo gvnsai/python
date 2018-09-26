@@ -6,8 +6,8 @@ I want to build a Flask web server with JWT authorization.
 
 Let’s start with setting up Flask
 
-$ mkdir jwt
-$ cd flask-jwt
+$ mkdir jwt in flask
+$ cd jwt in flask
 $ virtualenv -p python3 venv
 
 # following command will activate virtual environment on macOs/Linux

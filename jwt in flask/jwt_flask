@@ -1,1 +1,31 @@
+JSON Web Tokens (JWT) are very popular nowadays.
+Modern web-development is target at building Single Page Applications by using latest JavaScript libraries such as:-
+  Angular, React or Vue. 
+Because of that reason, JWT becomes a standard of authorization and communication between SPAs and web servers.
+I want to build a Flask web server with JWT authorization.
 
+Let’s start with setting up Flask
+
+$ mkdir jwt
+$ cd flask-jwt
+$ virtualenv -p python3 venv
+
+# following command will activate virtual environment on macOs/Linux
+$ source venv/bin/activate
+
+After activation of virtual environment install following packages:
+
+(venv) pip install flask flask-restful flask-jwt-extended passlib flask-sqlalchemy
+
+Here we have:
+
+Flask-RESTful — to create API endpoints
+Flask-JWT-Extended — to generate and check JWT
+passlib — to generate secure password hashes
+Flask-SQLAlchemy — Object-relational mapping to database
+
+flask-jwt
+├── views.py     # views of the server
+├── models.py    # database models
+├── resources.py # API endpoints
+└── run.py       # main script to start the server
